@@ -24,7 +24,7 @@ github_username:  bonitasoft-community
 
 # Build settings
 markdown: GFM
-theme: minima
+theme: jekyll-theme-modernist
 
 header_pages:
   - en/index.md
