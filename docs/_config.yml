@@ -13,18 +13,18 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Cours IUT2 - 2022 🏝
-email: delph79co@gmail.com
+title: Bonita Camp 🏝
+email: adoption@bonitasoft.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Cours IUT2 pour apprendre les bases du BPM et de la conception d'applications basées sur les processus
-baseurl: "/cours-iut2-2022" # the subpath of your site, e.g. /blog
+  Bonita Camp is a short training to learn how to build applications with Bonita 
+baseurl: "/bonita-camp" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: CoilleDelphine
-github_username:  dcoille
+twitter_username: bonitasoft
+github_username:  bonitasoft-community
 
 # Build settings
 markdown: GFM
-theme: jekyll-theme-minimal
+theme: minima
 
 header_pages:
   - en/index.md

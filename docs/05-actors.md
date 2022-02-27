@@ -1,5 +1,5 @@
 ---
-title: Exercice 4 - Gestion d'acteurs
+title: Exercice 5 - Gestion d'acteurs
 ---
 
 ## Objectif
@@ -77,4 +77,4 @@ Définir un rôle *approbateur* dans l'organisation et l'associer à l'acteur de
    - Se connecter avec l'utilisateur *helen.kelly* et le mot de passe *bpm*
    - Si le filtre d'acteur s'est bien exécuté, la tâche *Valider demande de congés* devrait être disponible dans la liste des tâches à faire
 
-[Exercice suivant : configuration d'un connecteur](05-connectors.md)
+[Exercice suivant : configuration d'un connecteur](06-connectors.md)
