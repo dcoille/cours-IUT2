@@ -331,6 +331,55 @@
           </section>
 
           <section>
+            <div class="flex justify-spacebetween alignitems-center"><h2 class="no-margin">Filtre d'acteurs - fonctionnement</h2><img src="images/organization-icon-dark.png" alt="organisation" /></div>
+            <p>Remplace complètement l'acteur</p>
+            <p>Produit une liste d'utilisateurs en fonction d'informations en entrée et d'une logique interne</p>
+            <p>Exécuté quand l'exécution du processus atteint l'étape associée au filtre d'acteur</p>
+            <p>Peut être actualisé en utilisant les API</p>
+            <aside class="notes">
+              Filters are executed only once when task starts. They can be run again with API call.<br />
+              [Studio &amp; Portal - change task actor to actor filter, run it]<br />
+            </aside>
+          </section>
+
+          <section>
+            <div class="flex justify-spacebetween alignitems-center"><h2 class="no-margin">Rappel : acteurs vs filtres d'acteur</h2><img src="images/organization-icon-dark.png" alt="organisation" /></div>
+
+            <table class="compare">
+              <tr>
+                <th></th>
+                <th>Avantages</th>
+                <th>Limitations</th>
+              </tr>
+              <tr>
+                <td>Acteur</td>
+                <td>Toujours à jour par rapport à l'organisation</td>
+                <td>Association qui ne peut pas se baser sur des données métier</td>
+              </tr>
+              <tr>
+                <td>Filtre d'acteur</td>
+                <td>Association qui peut inclure des données métier</td>
+                <td>Calculé à l'instanciation d'une étape</td>
+              </tr>
+            </table>
+
+            <aside class="notes">
+              8<br /><br />
+              Explain what is a candidate and assignee<br />
+              Actor can be related to process instantiation, single human task or lane<br />
+              [Studio - actors list and reference to process, initiator]<br />
+              Actors allow to automatically update task visibility when organization changes.<br/>
+              Actor can be mapped to a subset of the organization using actor mapping: lists of users, groups, roles and memberships<br />
+              [Studio and Portal - edit process configuration actor mappings, run it]<br />
+              Actors cannot use any live data (business variables, external system information...) whereas filters can.<br/>
+              Filters are executed only once when task starts. They can be run again with API call..<br />
+              [Studio and Portal - change task actor to actor filter, run it]<br />
+              If you already have information about your organization stored in an LDAP/Active Directory server Enterprise Edition provide a tool that will save you time by dealing with the synchronization between LDAP/AD and Bonita user database.<br />
+              On the authentication purpose, Bonita provides features to use SSO (SAML V2, CAS, Kerberos-Windows SSO) and LDAP.
+            </aside>
+          </section>
+
+          <section>
             <div class="flex justify-spacebetween alignitems-center"><h2 class="no-margin">Profils</h2><img src="images/profil-icon.png" alt="profiles" /></div>
             <!--Récupérer le schéma de fonctionnement des profils-->
             <p>Les profils définissent les accès et la navigation dans les Living applications, aux objets et attributs du BDM
