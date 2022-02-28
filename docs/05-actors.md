@@ -36,6 +36,7 @@ Définir un rôle *approbateur* dans l'organisation et l'associer à l'acteur de
 
    ![diagramme avec deux lanes](images/ex04/ex4_02.png)
 
+###Option 1 - définir un rôle
 1. Créer un rôle *approbateur* dans l'organisation :
    - Dans l'explorateur du projet, cliquer sur **Organisation** et sélectionner l'organisation de test *ACME.organisation*.   
      L'éditeur d'organisation s'ouvre, avec la vue d'ensemble sur les groupes, les rôles et les utilisateurs.
@@ -50,8 +51,26 @@ Définir un rôle *approbateur* dans l'organisation et l'associer à l'acteur de
      ![ajouter une adhésion](images/ex04/ex4_09.png)
    - Déployer l'organisation pour prendre en compte les changements en cliquant sur l'icône **Déployer**.  
    >**Note** Pour aller plus loin, il est aussi possible de définir un filtre d'acteur. Cette méthode est décrite dans un prochain exercice.
-   
-1. Définir les acteurs du processus
+
+### Option 2 - définir un filtre d'acteur
+1. Sélectionner la lane *Validateur*
+
+2. Configurer un filtre d'acteur de type **Manager de l'initiateur du processus** sur la lane *Validateur* :
+   - Sélectionner la lane *Validateur*
+   - Naviguer dans l'onglet **Général / Acteurs**
+   - Sélectionner l'acteur *Employee actor* à partir du menu déroulant
+   - Cliquer sur le bouton **Définir...** associé au filtre
+   - Si aucun filtre n'a été défini, il vous sera suggéré d'en installer un
+   ![filtre_extension](images/ex04/ex4_10.png)
+   - Sélectionner un filtre de type **Manager de l'initiateur** dans le MarketPlace des extensions
+    ![filtre_marketplace](images/ex04/ex4_11.png)
+   - Sélectionner la définition du filtre **Manager de l'initiateur du processus** 
+   - Cliquer sur **Suivant**
+   - Nommer le filtre *managerInitiateur*
+   - Cliquer sur **Terminer**
+
+
+3. Définir les acteurs du processus
    - Revenir sur le diagramme et sélectionner la lane *Approbateur*
    - Naviguer dans l'onglet **Général / Acteur**
    - Cliquer sur le bouton **Ajouter**
@@ -60,14 +79,14 @@ Définir un rôle *approbateur* dans l'organisation et l'associer à l'acteur de
    - Cliquer sur **Terminer**
    - Vérifier que l'acteur défini dans la lane *Demandeur* est bien l'acteur par défaut *Employee actor*
 
-1. Lier l'organisation aux acteurs du processus :
+4. Lier l'organisation aux acteurs du processus :
    - Cliquer sur l'icône *Configurer* ![configurer](images/ex04/ex4_06.png) qui va permettre d'associer les acteurs aux bons rôles dans l'organisation.
    - Dans l'éditeur, sélectionner **Association acteurs/utilisateurs**. L'employee actor est déjà associé à un groupe, il faut donc faire de même avec l'acteur **approbateur**
    - Sélectionner l'acteur **approbateur** (A) puis cliquer sur le bouton **Rôles** (B)
    - Dans la fenêtre, sélectionner le rôle **approbateur** (C)
     ![mapping acteur](images/ex04/ex4_07.png)
 
-1. Exécuter le processus avec les deux acteurs :
+5. Exécuter le processus avec les deux acteurs :
    - Lancer le processus à partir du Studio (l'utilisateur Walter Bates sera utilisé)
    - Soumettre le formulaire de *Saisie demande congés*. Si les acteurs sont correctement configurés, la tâche *Valider demande de congés* ne devrait pas être proposée
    - Se déconnecter de l'application utilisateur en naviguant sur le nom d'utilisateur dans le coin supérieur droit puis **Déconnexion** :
