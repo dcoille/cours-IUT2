@@ -1,5 +1,5 @@
 ---
-title: Exercice 6 - Créer une application de gestion de congés
+title: Exercice 7 - Créer une application de gestion de congés
 ---
 
 ## Objectif
