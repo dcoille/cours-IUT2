@@ -16,11 +16,11 @@
 title: TP LP SIMO - Automatisation des processus métiers
 email: delph79co@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Bonita Camp is a short training to learn how to build applications with Bonita 
+  The exercises aim at learning how to buil business process applications with Bonita
 baseurl: "/cours-IUT2" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: bonitasoft
-github_username:  bonitasoft-community
+twitter_username: CoilleDelphine
+github_username:  dcoille
 
 # Build settings
 markdown: GFM

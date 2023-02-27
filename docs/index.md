@@ -4,7 +4,7 @@ title: TP automatisation des processus
 
 ## Présentation
 
-Ce TP est une formation d'introduction à l'utilisation de Bonita Community Edition en tant que BPMS. Il a pour objectif de vous permettre de vous familiariser avec les concepts du BPM et de l'automatisation des processus, et des fonctionnalités cœurs de Bonita.
+Ce TP est une formation d'introduction la réalisation d'une application basée sur les processus en s'appuyant sur Bonita Community, solution de DPA. Il a pour objectif de vous permettre de vous familiariser avec les concepts du management de processus métiers et de l'automatisation des processus, et des fonctionnalités cœurs de Bonita.
 Il comporte à la fois des informations théoriques et une partie mise en pratique avec des exercices permettant de créer une première application à l'aide de Bonita.
 
 Le TP se compose :
@@ -13,7 +13,7 @@ Le TP se compose :
 * Les [corrections des exercices](https://github.com/dcoille/cours-IUT2/releases/latest)
 
 ## Prérequis
-1. [Téléchargez](https://fr.bonitasoft.com/telechargez) et installez la dernière version du Studio Bonita. Pour plus de détails référez vous à la [documentation officielle](https://documentation.bonitasoft.com/bonita/latest/bonita-studio-download-installation)
+1. [Téléchargez](https://github.com/bonitasoft/bonita-platform-releases/releases) et installez la dernière version du Studio Bonita. Pour plus de détails référez vous à la [documentation officielle](https://documentation.bonitasoft.com/bonita/latest/bonita-studio-download-installation)
 1. Vous pouvez également optionnellement télécharger les corrections et les slides au format PDF depuis la [section "release" du projet GitHub](https://github.com/dcoille/cours-IUT2/releases/latest)
 1. Téléchargez [Fake SMTP](http://nilhcem.github.io/FakeSMTP/downloads/fakeSMTP-latest.zip). Cette application va être utilisée pour simuler un serveur de mail.
 1. Il est recommandé d'utiliser Chrome ou Firefox lors du développement pour bénéficier de l'outillage de test de ces navigateurs. 
