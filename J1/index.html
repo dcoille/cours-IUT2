@@ -5,7 +5,7 @@
 
     <title>Bonita Camp</title>
 
-    <meta name="description" content="Présentation de Bonita permettant de rapidement réaliser une première application et de comprendre tous les concepts de la plateforme DPA">
+    <meta name="description" content="TP permettant de rapidement réaliser une première application et de comprendre tous les concepts d'une plateforme DPA avec Bonita">
     <meta name="author" content="Delphine Coille">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -40,8 +40,8 @@
       <div class="slides">
 
         <section>
-          <div class="flex justify-spacebetween alignitems-center"><h3 class="no-margin">Réaliser une application basée sur l'automatisation des processus </h3><img src="images/LogoIUT2DptInfo.png" alt="logo IUT" /></div>
-          <div class="flex justify-spacebetween alignitems-center"><h4 class="no-margin">Delphine Coille - Les 11 et 28 février, 1er mars 2022</h4>
+          <div class="flex justify-spacebetween alignitems-center"><h3 class="no-margin">Réaliser une application basée sur l'automatisation des processus </h3><img width="30%" src="images/LogoIUT2DptInfo.png" alt="logo IUT" /></div>
+          <div class="flex justify-spacebetween alignitems-center"><h4 class="no-margin">Delphine Coille - Les 28 février, 1er et 15 mars 2023</h4>
           </div>
 
           <aside class="notes">
@@ -59,9 +59,9 @@
         <section>
             <section>
               <h2>Programme</h2>
-               <p>Jour 1 - Les bases du projet DPA</p>
+               <p>Jour 1 - Les bases du projet d'automatisation de processus</p>
                <ul class="agenda">
-                 <li>Méthodologie de projet de DPA</li>
+                 <li>Méthodologie de projet</li>
                  <li>Les BPMS et la solution Bonita</li>
                  <li>Modélisation et automatisation</li>
                </ul>
@@ -72,18 +72,17 @@
                <p>Jour 2 - Applications basées sur les processus</p>
                <ul class="agenda">
                   <li>Gestion des données</li>
-                  <li>Les formulaires de processus</li>
-                  <li>Gestion des utilisateurs</li>
+                  <li>L'interaction avec les utilisateurs</li>
                </ul>
             </section>
             <section>
               <h2>Programme</h2>
-                <p>Jour 3 - Pour aller plus loin dans le développement</p>
+                <p>Jour 3 - L'intégration dans le système d'information</p>
                 <ul class=agenda">
+                  <li>La communication via les APIs</li>
                   <li>Les extensions</li>
                   <li>Les applications</li>
                   <li>Déploiement</li>
-                  <li>L'architecture de la solution Bonita (optionnel)</li>
                 </ul>
 
               <aside class="notes">
@@ -96,8 +95,8 @@
           <h2>Avant de démarrer</h2>
           <ul>
             <li>Assurez-vous d'avoir une JVM (Java 11 recommandée)</li>
-            <li>Installer la dernière version du Studio</li>
-            <li>Télécharger les fichiers du Bonita Camp depuis GitHub : <a href="https://github.com/Bonitasoft-Community/bonita-camp/releases">https://github.com/Bonitasoft-Community/bonita-camp/releases</a></li>
+            <li>Installez la dernière version du Studio</li>
+            <li><a href=https://dcoille.github.io/cours-IUT2/index.html">Accès aux exercices</a></li>
             <li>Nous recommandons d'utiliser <img class="no-margin" src="images/chrome.png" alt="chrome"/> ou <img class="no-margin" src="images/firefox.png" alt="firefox"/> lors de vos développements</li>
           </ul>
           
@@ -112,7 +111,7 @@
         <!-- Présentation d'un projet Bonita et project composition  -->
         <section>
           <section>
-           <h2>Le cycle d'exécution d'un projet DPA</h2>
+           <h2>Le cycle d'exécution d'un projet d'optimisation de processus</h2>
            <img class="stretch" src="images/project-lifecycle.png" alt="cycle projet Bonita" />
 
             <aside class="notes">
@@ -148,19 +147,15 @@
           </section>
         </section>
 
-          <!-- Présentation de Bonita  -->
+          <!-- Présentation des applications basées sur les processus métiers  -->
         <section>
           <section>
             <h2>Applications basées sur l'automatisation des processus</h2>
-            <p>Combiner différents processus ensemble dans le but de fournir une application métier riche et cohérente</p>
+            <p><b>Combiner différents processus ensemble</b> dans le but de fournir une application métier riche et cohérente</p>
             <p>Déployées et restituées dans un navigateur web ou mobile</p>
-            <p>Composée de nombreux éléments dont : </p>
-            <ul>
-              <li>Formulaires</li>
-              <li>Pages</li>
-              <li>Layout</li>
-              <li>Thème</li>
-            </ul>
+            <div>
+              <img width="15%" src="images/think.png" alt="exercise"/><h4>Vous avez des exemples ?</h4>
+            </div>
 
             <aside class="notes">
               14<br /><br />
@@ -172,17 +167,35 @@
               To have an application, we need a descriptor that will define how resources will be glued together<br />
               [Studio - show the descriptor and deploy it]<br />
               [Portal - show edition of the deployed application with new version of the dashboard page, menus, etc.]
+              Montrer iTop comme exemple, puis expliquer que c'est dans un domaine ITSM, et montrer ensuite avec bonita qu'on a le même type d'application
             </aside>
           </section>
 
           <section>
           <div class="flex justify-spacebetween alignitems-center"><h2 class="no-margin">Applications personnalisées</h2><img src="images/bonita-logo.png" /></div>
-           <!-- Ajout images showroom  -->
+           <!-- Ajout images showroom + parler d'autres exemples d'applications personnalisées -->
             <img class="stretch" src="images/ex-applications.png" alt="Applications" />
 
             <aside class="notes">
-            1:30<br /><br />
+            1:30<br />Présenter l'application faite pour l'UGA avec Bonita + parler d'iTop<br />
 
+            </aside>
+          </section>
+
+<!-- Présentation des applications Bonita -->
+          <section>
+            <h2>Applications Bonita : interfaces web de l'utilisateur et de l'administrateur</h2>
+            <p>2 applications par défaut et 2 applications coeur de plateforme embarquées dans Bonita runtime</p>
+            <ul>
+              <li>Application <b>utilisateur Bonita</b>  <img width="60px" src="images/Bonita-Portal-Bonita-User-Application.jpeg" alt="Bonita user app" /></li>
+              <li>Application <b>administrateur Bonita</b>  <img width="60px" src="images/Bonita-Portal-Bonita-Admin-Application.jpeg" alt="Bonita user app" /></li>
+              <li>Application <b>super-administrateur Bonita</b>  <img width="60px" src="images/Bonita-Portal-Tenant-Admin.jpeg" alt="Bonita user app" /></li>
+              <li><b>Répertoire d'applications</b>  <img width="60px" src="images/Bonita-Portal-Bonita-App-Directory.jpeg" alt="Bonita user app" /></li>
+            </ul>
+
+            <aside class="notes">
+              30<br /><br />
+              Portal uses the Bonita APIs as any client of the Engine
             </aside>
           </section>
 
@@ -197,6 +210,19 @@
             <p>Application native d'administration et de suivi des processus</p>
             <img class="stretch" src="images/admin-app.png" alt="Bonita application" />
           </section>
+
+          <section>
+            <h2>Application super administrateur</h2>
+            <p>Application native d'administration avancée de la plateforme</p>
+            <img class="stretch" src="images/app-super-admin.png" alt="Bonita Super admin" />
+          </section>
+
+          <section>
+            <h2>Répertoire centralisé d'applications</h2>
+            <p>Une URL unique centralisant toutes les applications accessibles par l'utilisateur</p>
+            <img class="stretch" src="images/app-directory.png" alt="App directory" />
+          </section>
+        </section>
 
           <section>
             <div class="flex justify-spacebetween alignitems-center"><h2 class="no-margin">La solution Bonita</h2><img src="images/bonita-logo.png" /></div>
@@ -291,7 +317,7 @@
                   </ul></td>
               </tr>
               <tr align="left">
-                Basé sur AngularJS et Bootstrap<br />
+                Basé sur AngularJS et Bootstrap
                 Fonctionne dans le navigateur
               </tr>
             </table>
@@ -328,35 +354,6 @@
             </aside>
           </section>
 
-          <section>
-            <h2>Applications Bonita : interfaces web de l'utilisateur et de l'administrateur</h2>
-            <p>2 applications par défaut et 2 applications coeur de plateforme embarquées dans Bonita runtime</p>
-            <ul>
-              <li>Application <b>utilisateur Bonita</b>  <img width="60px" src="images/Bonita-Portal-Bonita-User-Application.jpeg" alt="Bonita user app" /></li>
-              <li>Application <b>administrateur Bonita</b>  <img width="60px" src="images/Bonita-Portal-Bonita-Admin-Application.jpeg" alt="Bonita user app" /></li>
-              <li>Application <b>super-administrateur Bonita</b>  <img width="60px" src="images/Bonita-Portal-Tenant-Admin.jpeg" alt="Bonita user app" /></li>
-              <li><b>Répertoire d'applications</b>  <img width="60px" src="images/Bonita-Portal-Bonita-App-Directory.jpeg" alt="Bonita user app" /></li>
-            </ul>
-
-            <aside class="notes">
-              30<br /><br />
-              Portal uses the Bonita APIs as any client of the Engine
-            </aside>
-          </section>
-
-          <section>
-            <h2>Application super administrateur</h2>
-            <p>Application native d'administration avancée de la plateforme</p>
-            <img class="stretch" src="images/app-super-admin.png" alt="Bonita Super admin" />
-          </section>
-
-          <section>
-            <h2>Répertoire centralisé d'applications</h2>
-            <p>Une URL unique centralisant toutes les applications accessibles par l'utilisateur</p>
-            <img class="stretch" src="images/app-directory.png" alt="App directory" />
-          </section>
-        </section>
-
         <section>
           <section>
             <div class="flex justify-spacebetween alignitems-center"><h2 class="no-margin">Démarrer le projet dans Bonita Studio</h2><img src="images/diagram-icon.png" /></div>
@@ -365,6 +362,9 @@
               <li>Les projets sont intégrés à un workspace en local ou à distance</li>
               <li>Les projets peuvent être partagés avec SVN ou Git depuis Bonita Studio</li>
             </ul>
+            <div>
+              <img src="images/person-pointing.png" alt="A vous"/><h2>A vous !</h2>
+            </div>
 
 
             <aside class="notes">
@@ -454,7 +454,7 @@
               <img width="30%" src="images/think.png" alt="exercise"/><h2>Exercice 1</h2>
             </div>
             <h4>Modélisation basique de processus</h4>
-            <p>Si vous ne l'avez pas déjà fait, téléchargez les instructions et les corrections à partir de GitHub <br> <a href="https://github.com/Bonitasoft-Community/bonita-camp/releases">https://github.com/Bonitasoft-Community/bonita-camp/releases</a></p>
+            <p>Si vous ne l'avez pas déjà fait, téléchargez les instructions et les corrections à partir de GitHub <br> <a href="https://dcoille.github.io/cours-IUT2/index.html">https://dcoille.github.io/cours-IUT2/index.html</a></p>
 
             <aside class="notes">
               2.00<br /><br />
